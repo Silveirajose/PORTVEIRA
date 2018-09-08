@@ -1,0 +1,419 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x: hidden;
+}
+header{
+
+	width: 100%;
+	height: 100%;
+	height: 100vh;
+	background: radial-gradient(#6D2F20 20%,#200B0A);
+}
+.topo{
+	width: 1024px;
+	height: 80px;
+	margin:auto;
+}
+.logo{
+	width: 500px;
+	height: 80px;
+	float: left;
+	text-align: center;
+}
+.menu{
+	width: 524px;
+	height: 80px;
+	float: left;
+}
+.menu ul{
+	list-style: none;
+}
+.menu ul li{
+ float: left;
+ display: inline-block;
+ margin: 0px 3px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	line-height: 100px;
+	padding:20px;
+	outline: none;
+	border-radius: 7px;
+	transition: .5s;
+	font-family: 'Lobster', cursive;
+}
+.menu ul li a:hover{
+ background-color: #0D7F40;
+}
+.social{
+	position: fixed;
+	left: 0px;
+	top: 248px;
+	z-index: 999;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-color: #1DA1F2;
+  color: white;
+  cursor: pointer;
+  padding-top: 9px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  font-family: Arial;
+  transition: .5s;
+  overflow: hidden;
+}
+.icon i{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.icon:hover{
+	width: 125px;
+}
+.social-2 i{
+margin-right: 15px;
+margin-left: 13px;
+}
+.social-4{
+	background-color: #00C666;
+}
+.social-3{
+	background-color: #C92E96;
+}
+.social-2{
+	background-color: #3B5998;
+}
+/* ======= Efeitos =======*/
+.pizza img{
+	position: absolute;
+	width: 900px;
+	top: 50%;
+	left: 50%;
+	margin-left: -400px;
+	margin-top: -190px;
+
+}
+.pizzaa{
+	animation-name: pizza;
+	animation-duration: 3s;
+}
+.moio{
+	animation-name: moio;
+	animation-duration: 1s;
+	animation-delay: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+.refri{
+	animation-name: refri;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-timing-function: ease-in-out;
+	animation-fill-mode: both;
+}
+.tomate{
+	animation-name: tomate;
+	animation-duration: 1s;
+	animation-delay: 1.8s;
+	animation-fill-mode: both;
+
+}
+.texto{
+	animation-name: texto;
+	animation-duration: 1s;
+	animation-delay: 2.5s;
+	animation-fill-mode: both;
+}
+.fumaca{
+	animation-name: fumaca;
+	animation-duration: 1s;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+}
+
+@keyframes pizza{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes refri{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes moio{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes tomate{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes fumaca{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes texto{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+/* ======= Fim Efeitos =======*/
+@font-face{
+	src:url("../fonts/TradeMark Demo.otf");
+	font-family: titulo;
+}
+@font-face{
+	src:url("../fonts/Angeline Vintage_Demo.ttf");
+	font-family: angelina;
+}
+#part-1{
+	width: 100%;
+	min-height: 300px;
+	background-color: #BF0000;
+	position: relative;
+}
+#part-1 article{
+	width: 1024px;
+	margin: auto;
+	padding: 40px 0;
+	text-align: center;
+}
+.promo-part1{
+	font-size: 35px;
+	color: white;
+	font-family: titulo;
+}
+.text-part1{
+	margin-bottom: 10px;
+	color: white;
+}
+.btn{
+    width: 250px;
+    padding: 13px 0;
+    border: none;
+    background: white;
+    cursor: pointer;
+    color: #BF0000;
+    border-radius: 5px;
+    transition: .4s;
+    border:white 2px solid;
+}
+.btn:hover{
+	background:#BF0000;
+  color: white;
+}
+.migue{
+	width: 105%;
+	height: 100px;
+	background-color: white;
+	position: absolute;
+	bottom: -99px;
+	left: -11px;
+	z-index: 20;
+	transform: rotate(-4deg);
+	transform-origin: 0 0;
+}
+#part-2{
+	width: 100%;
+}
+#part-2 article{
+	width: 1024px;
+	height: 300px;
+	margin: auto;
+	position: relative;
+  z-index: 100;
+}
+/* ====   ingredientes ===== */
+.ingre-1,
+.ingre-2,
+.ingre-3{
+	position: absolute;
+	font-family: angelina;
+	color: #BF0000;
+	font-size: 50px;
+}
+.img-ingre{
+	position: absolute;
+	width: 400px;
+	right: 0;
+	top: 20px;
+}
+.ingre-1{
+    top: 22px;
+    left: 68px;
+    transform: rotate(5deg);
+}
+.ingre-2{
+	   top: 80px;
+    left: 68px;
+    transform: rotate(-5deg);
+}
+.ingre-3{
+	  top: 36px;
+    left: 360px;
+    transform: rotate(20deg);
+    font-size: 70px;
+}
+.terca,.quinta,.sexta{
+	display: none;
+	width: 1024px;
+	height: 300px;
+	background-color: white;
+}
+/* === TERÇA =====*/
+.terca-1,
+.terca-2,
+.terca-3,
+.terca-4,
+.terca-5,
+.terca-6{
+	position: absolute;
+	font-family:angelina;
+	color: #BF0000;
+	font-size: 30px;
+}
+
+.terca-1{
+	  top: 173px;
+    left: 140px;
+    transform: rotate(6deg);
+}
+.terca-2{
+	  top: 206px;
+    left: 120px;
+    transform: rotate(-5deg);
+}
+.terca-3{
+	  top: 20px;
+    left: 475px;
+    font-size: 80px;
+}
+.terca-4{
+	  top: -57px;
+    right: 239px;
+    font-size: 140px;
+}
+.terca-5{
+	top: 183px;
+  right: 319px;
+  transform: rotate(-5deg);
+}
+.terca-6{
+	  top: 3px;
+    right: 30px;
+    transform: rotate(-9deg);
+    font-size: 100px;
+}
+.img-terca{
+	  width: 364px;
+    position: absolute;
+    left: 41px;
+    top: 9px;
+}
+.refri-promo{
+	  width: 84px;
+    position: absolute;
+    right: 319px;
+}
+.img-sexta{
+	top: 33px;
+}
+/*==== part3 =====*/
+#part3{
+	width: 100%;
+	height: 564px;	
+	position: relative;
+	background-image: url("../imagens/pizza-2802332_1920.jpg");
+}
+#part3 article{
+	width: 1024px;
+	margin: auto;
+	height: 564px;
+	padding-top: 130px;
+}
+#migue2{
+	width: 135%;
+	height: 100px;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	left: -11px;
+	z-index: 150;
+	transform: rotate(-4deg);
+	transform-origin: 0 0;
+}
+#part3 article h2{
+font-family:angelina;
+	color: white;
+	font-size: 50px;
+	transform: rotate(1deg);
+  position: absolute;
+  top:108px;
+}
+#part3 article h3	{
+  font-family:angelina;
+	color: white;
+	font-size: 50px;
+	transform: rotate(-5deg);
+	 position: absolute;
+	 top:153px;
+}
+#part3 article p{
+    color: white;
+    width: 550px;
+    text-align: justify;
+    line-height: 25px;
+    margin-top: 133px;
+}
+/*==== part4 =====*/
+#part4{
+	width: 100%;
+}
+#part4 article{
+	width: 1024px;
+	margin: auto;
+	min-height: 350px;
+	text-align: center;
+}
+#part4 article h2{
+  font-family:angelina;
+  color: #BF0000;
+	font-size: 50px;
+}
+.part-tamanho{
+  width: 1024px;
+  text-align: center;
+}
+.manho{
+	float: left;
+	width: 250px;
+}
+.manho h3{
+	font-family: titulo;
+	font-size: 24px;
+}
+.manho h4{
+	font-family: Arial;
+	font-size: 12px;
+}
+.manho p{
+	font-family: titulo;
+	color: #60AF16;
+	font-size: 26px;
+}
+.manho img{
+	width: 117px;
+}
+footer{
+	width: 100%;
+	height: 250px;	
+	background-color: #BF0000;
+}

@@ -1,0 +1,229 @@
+/*
+CORES
+#B20800
+#FF2419
+#FF0B00
+#00B242
+#00FF5E
+*/
+@charset "utf8";
+body, html{
+height: 100%;
+}
+body{
+overflow-x: hidden;
+}
+.avatar{
+width:300px;
+height:300px;
+position: center;
+}
+#menuleft{
+position: fixed;
+background: #FFF;
+color:red;
+z-index: 100;
+display: block;
+padding: 0px;
+width: 50px;
+top: 20px;
+left: 20px;
+font-size: 18px;
+text-align: center;
+cursor: pointer;
+transition: all 0.2s ease 0s;
+border-radius: 30px;
+box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1);
+line-height: 50px;
+
+}
+/*icons */
+#icon-bar {
+color:black;
+}
+#icon-bar:hover {
+color:white;
+}
+.menus{
+color :white;
+margin: 25px 25px 25px 35px;
+}
+.menus:hover{
+color:black;
+}
+/*icons */
+.titulo{
+color:white;
+font-family: 'Courgette', cursive;
+}
+/* The side navigation menu */
+.sidenav {
+height: 100%; /* 100% Full-height */
+width: 0; /* 0 width - change this with JavaScript */
+position: fixed; /* Stay in place */
+z-index: 1; /* Stay on top */
+top: 0;
+left: 0;
+background-color:black; /* Black*/
+color: white;
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+transition: 0.1s; /* 0.5 second transition effect to slide in the sidenav */
+font-family: arial;
+font-style: italic;
+}
+/* The navigation menu links */
+.sidenav a {
+padding: 20px 20px 20px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+transition: 0.3s;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+color: white;
+text-decoration: none;
+}
+/* Position and style the close button (top right corner) */
+#closebtn{
+margin:50px 50px 50px 35px;
+}
+.sidenav .closebtn {
+position: relative;
+background: #FFF;
+color:red;
+z-index: 100;
+display: block;
+padding: 0px;
+width: 50px;
+top: 20px;
+left: 20px;
+font-size: 18px;
+text-align: center;
+cursor: pointer;
+transition: all 0.2s ease 0s;
+border-radius: 30px;
+box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1);
+line-height: 50px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+transition: margin-left .1s;
+padding: 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+@media screen and (max-height: 450px){
+.contato{padding-bottom: none;
+padding-top:none}
+}
+span i{
+font-size: 45px;
+}
+#setadown{
+color: white;
+}
+#setadown:hover{
+color:red;
+}
+#info{
+margin-bottom: 150px;
+}
+body, html {
+height: 100%;
+}
+#banner {
+/* The image used */
+background-image: url("../img/banner-min.png");
+align-items: center;
+text-align: center;
+padding-top:200px ;
+/* Full height */
+height: 100%;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px)
+.parallax {
+background-attachment: scroll;
+}
+/*SERVIÇOS*/
+.serv > img{
+width: 100px;
+height: 100px;
+}
+.serv{
+align-items: center;
+text-align: center;
+}
+.serv>h2{
+font-family: 'Courgette', cursive;
+}
+.sessao2{
+background-image: url("../img/banner-min.png");
+align-items: center;
+text-align: center;
+padding-top:100px ;
+padding-bottom: 100px;
+/* Full height */
+height: 100%;
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*CONTATO*/
+.contato{
+align-items: center;
+text-align: center;
+
+}
+a:hover{
+	text-decoration: none;
+}
+@media screen and (max-height: 600px)
+{
+.contato a > img
+}
+{width: 75px ;height: 75px;
+}
+@media screen and (max-width: 300px)
+{.contato a > img 
+}
+{width: 75px;height: 75px;
+}
+/*CONTATO*/
+footer {
+position:relative;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align: center;
+padding: 20px;
+text-align: center;
+background-color:black;
+color:white;
+}
+.card-text ,.card-title{
+text-align: center;
+align-items: center;
+}
+.list-group > a:hover{
+	text-decoration: none;
+	z-index: 0;
+}
+.list-group > ul {
+	text-decoration: none;
+	z-index: 0;
+
+}

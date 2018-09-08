@@ -1,0 +1,240 @@
+@charset "utf8";
+body, html{
+	height: 100%;
+}
+body{
+	overflow-x: hidden;
+}
+#cover{
+	background-image: url("../imagens/banner.png");
+	background-size: cover;
+	min-height: 100vh;
+	height: 100%;
+	background-origin: center center;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.cover{
+	width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white !important;
+}
+.fixed-top{
+	padding-top: 20px !important;
+}
+#linha-2 p{
+	text-align: justify;
+}
+#linha-2{
+	padding:20px 0px;
+}
+#linha-2 div:nth-of-type(2){
+	padding-top: 40px;
+}
+#linha-3{
+	width: 100%;
+	background-image: url("../imagens/original.jpg");
+	padding:20px 0px;
+	background-size: cover;
+	background-origin: center center;
+	background-attachment: fixed; 
+}
+.titulo{
+	  position: relative;
+    background-color: #212529;
+    width: 403px;
+    margin: auto;
+    color: white;
+    padding: 2px 0px 8px 0px
+}
+.slide{
+	margin-top: 40px;
+  position: relative;
+}
+.volta,
+.vai{
+	position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  z-index: 99;
+  font-size: 40px;
+  padding:  60px 5px 60px 5px;
+  background: none;
+  border: none;
+  transition: .3s;
+  outline: none;
+}
+.volta{
+	left: 0px;
+}
+.vai{
+	right: 0px;
+}
+.volta:hover,
+.vai:hover{
+  background:rgba(0,0,0,.5);
+  color: white;
+  outline: none;
+}
+.volta:focus,
+.vai:focus{
+	outline: none;
+}
+
+
+.prod{
+	text-align: center;
+}
+
+.prod img{
+	margin:auto;
+}
+#cards{
+	padding: 30px 0px;
+}
+.flip{
+	width: 250px;
+	height: 350px;
+	margin: auto;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,1);
+	position: relative;
+	cursor: pointer;
+}
+.front{
+	width: 250px;
+	height: 350px;
+	background-color: red;
+	position: absolute;
+	transform:perspective(600PX)rotateY(0deg);
+	transition: .5s linear .300ms;
+}
+.back{
+	width: 250px;
+	height: 350px;
+	position: absolute;
+	background-color: #F2D200;
+	transform: perspective(600px)rotateY(180deg);
+	backface-visibility: hidden;
+	transition: .5s linear .300ms;
+}
+
+.flip:hover > .front{
+	transform: perspective(600px)rotateY(-180deg);
+}
+.flip:hover > .back{
+	transform: perspective(600px)rotateY(0deg);
+}
+.back{
+	box-sizing: border-box;
+	padding: 10px;
+}
+.back p{
+	width: 100%;
+	height: 200px;
+	color: black;
+	text-align: justify;
+}
+#linha-5{
+	padding: 50px 0;
+	width: 100%;
+	background-size: cover;
+	background-origin: center center;
+	background-attachment: fixed;
+}
+#linha-5 h2{
+	margin-bottom: 50px;
+}
+.espaco{
+	height: 50px;
+	width: 100%;
+}
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
+  background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left;
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

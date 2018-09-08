@@ -1,0 +1,25 @@
+@charset "uft-8";
+/* 1070px */
+@media screen and (max-width: 1069px){
+	.menu ul li a{
+    padding: 20px 20px 20px 20px;
+}
+@media screen and (max-width: 930px){
+.col-t-1{width: 8.33333%;}
+.col-t-2{width: 16.66667%;}
+.col-t-3{width: 25%;}
+.col-t-4{width: 33.33332%;}col-
+.col-t-5{width: 41.66665%;}
+.col-t-6{width: 50%;}
+.col-t-7{width: 58.33331%;}
+.col-t-8{width: 66.66664%;}
+.col-t-9{width: 74.99997%;}
+.col-t-10{width: 83.33333%;}
+.col-t-11{width: 91.66663%;}
+.col-t-12{width: 100%;}
+.menu {
+	max-width: 580px;
+	height: 44px;
+	margin: auto;
+}
+}
